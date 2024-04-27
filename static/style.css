@@ -38,13 +38,19 @@ button:hover {
 }
 img{
   width:100%;
-  max-width: 70%;
+  max-width: 80%;
   height: auto; 
   border-radius: 25px;
   object-fit: cover;
   border-radius:10px;
 }
-.fact img{
+h4{
+  color:black
+}
+span{
+  color:white;
+}
+.jane img{
   width:100%;
   max-width: 100%;
   position:relative;

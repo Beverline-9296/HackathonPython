@@ -8,7 +8,8 @@ def index(request):
 
   r2 = requests.get('https://www.boredapi.com/api/activity')
   res2 = r2.json()  
-  activity = res2['activity'] 
+  activity = res2['activity']
+  type = res2['type']
 
   r3 = requests.get('https://dog.ceo/api/breeds/image/random')
   res3 = r3.json()  
@@ -28,5 +29,5 @@ def index(request):
   else:
     photo = None
      
-  return render(request, 'templates/index.html',{'fact':fact,'activity':activity,'dog':dog,'photo':photo, 'truth':truth ,'author':author ,'cat':cat })
+  return render(request, 'templates/index.html',{'fact':fact,'activity':activity, 'type':type,'dog':dog,'photo':photo, 'truth':truth ,'author':author ,'cat':cat })
   
